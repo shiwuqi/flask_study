@@ -22,9 +22,9 @@ class User(db.Model):
 # 增 user1 = User(username='zhangsan', email='123456@qq.com', password='123456')
 # db.session.add(user1) --> db.session.commit()
 # 查
-# result = User.query.filter(User.username='zhangsan').first()
+# result = User.query.filter_by(User.username='zhangsan').first()
 # 改
-# user2 = User.query.filter(User.username='zhangsan').first()
+# user2 = User.query.filter_by(User.username='zhangsan').first()
 # user1.username = 'lisi'
 # db.session.commit()
 # 删
