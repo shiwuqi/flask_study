@@ -28,6 +28,6 @@ class User(db.Model):
 # user1.username = 'lisi'
 # db.session.commit()
 # 删
-# user1 = User.query.filter(User.username='zhangsan').first()
+# user1 = User.query.filter_by(User.username='zhangsan').first()
 # db.session.delete(user1)
 # db.session.commit()
