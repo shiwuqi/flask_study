@@ -11,7 +11,7 @@ class Config(object):
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@127.0.0.1:3306/test?charset=utf8'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@127.0.0.1:3306/test?charset=utf8' # mysql+pymysql: 是指明通过pymysql这个包来连接数据库
 
 config = {
     'development': DevelopmentConfig,
